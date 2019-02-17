@@ -2444,3 +2444,36 @@
     }
   }
 }
+
+// @media (min-width: 360px) { 
+//   .back-img {
+//     background-image:unset;
+//    }
+// }
+
+
+
+
+
+// @media (max-width: 500px) { /* Specific to this particular image */
+   
+//   .back-img{
+//     background-image:none;
+//   }
+// }
+
+// @media only screen and ( min-width: 640px ) {
+//   .back-img { 
+//     background-image: none !important;
+//   }
+// }
+
+@media only screen and (max-width: 600px) {
+  .back-img { 
+    background-image: unset;
+  }
+  .landing-title{
+    font-size: 25px;
+  }
+  
+}

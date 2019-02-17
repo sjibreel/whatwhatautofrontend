@@ -393,7 +393,7 @@ ul {
   }
 }
 .btn-custom {
-  color: $white;
+  color: rgb(253, 181, 0);
   font-size: 14px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -403,11 +403,12 @@ ul {
   background-size: 300% 100%;
   transition: all .4s ease-in-out;
   &.theme-color {
-    background-image: linear-gradient(to right, #19d3dc, #18e7d3, #18e7d3, #19d2dd);
+    background-color:  rgb(18, 39, 54)!important;
   }
   &:hover {
     background-position: 100% 0;
     transition: all .4s ease-in-out;
+    color: white;
   }
   &:focus {
     outline: none;
@@ -417,6 +418,7 @@ ul {
   i{
     animation: btn-animation 1s linear infinite;
     transform: scale(2);
+    color: white;
   }
 }
 .tap-top {

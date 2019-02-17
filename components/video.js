@@ -7,7 +7,7 @@ class Video extends React.Component {
   		// Getting Dynamic Demo Pages Data
   		let VideoList = this.props.videos.map((val, i) => {
   			return (
-	  			<div className="col-xl-4 col-lg-6 col-12 text-center" key={i}>
+	  			<div className="col-xl-4 col-lg-6 col-sm-12 text-center" key={i}>
 	  				<div key={i}>
 							<div className="embed-responsive embed-responsive-16by9">
 								<iframe className="embed-responsive-item" src={val.src} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -27,7 +27,7 @@ class Video extends React.Component {
 		             <div className="border-shape"></div>
 		           </div>
 		           <div className="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
-							 	<p className="demo-description">You don't have to get taken advantage of.<br/>Let me teach you about cars so you're better equipped at the dealership or car repair shop.</p>
+							 	<p className="demo-description"><h3>You don't have to get taken advantage of.<br/>Let me teach you about cars so you're better equipped at the dealership or car repair shop.</h3></p>
 		           </div>
 		        </div>
 		        <div className="row mt-35 landing-screen-animation">
