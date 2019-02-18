@@ -5,7 +5,7 @@ import '../styles/index.scss';
 import { Modal, Alert } from 'react-bootstrap';
 import firebase from 'firebase';
 import firebaseApp from '../firebase-config';
-
+import Head from 'next/head'
 class App extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -161,13 +161,13 @@ class App extends React.Component {
         buyFields = (
           <React.Fragment>
            
-            <div className="form-horizontal form-group row">
+            <div className="form-group row">
+            
               {/* <div className="col-sm-12">
                <p className="first-btn-para">Editable content box:<br/>
                Not sure what you want ? That's ok! We'll go <br/>
                Our all the options so you can choose the<br/> right car that fits your needs.
                <br/>We do 1 of 1</p>
-               
             </div> */}
 
               <label for="name" className="col-sm-2 control-label">
@@ -986,7 +986,7 @@ class App extends React.Component {
         buyFields = (
           <React.Fragment>
             <div className="form-group">
-              <label className="form-check-label">
+              <label className=" form-check-label">
                 What kind of car do you want to buy?
               </label>
               <br />
@@ -1023,8 +1023,9 @@ class App extends React.Component {
       modalForm = (
         <React.Fragment>
           {error}
+          
           <div className="form-group">
-            <label className="form-check-label">Know what you want?</label>
+            <label className=" form-check-label">Know what you want?</label>
             <br />
             <div className="form-check form-check-inline">
               <input
@@ -1339,6 +1340,10 @@ class App extends React.Component {
 
     return (
       <div>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta charSet="utf-8" />
+        </Head>
         {/*home section*/}
         <section className="back-img ">
           <div className="container-fluid">
@@ -1394,19 +1399,33 @@ class App extends React.Component {
             </div>
 
             {/* modal */}
-            <Modal show={this.state.show} onHide={this.handleClose}>
+            <div className="dep">
+            <Modal 
+          
+            size="lg"
+            show={this.state.show} 
+            onHide={this.handleClose}
+            // dialogClassName="modal-90w"
+            aria-labelledby="example-custom-modal-styling-title-lg"
+           >
               <Modal.Header closeButton>
-                <Modal.Title> {modalHeaderText} </Modal.Title>
+                <Modal.Title
+                size="lg" 
+                id="example-custom-modal-styling-title-lg">
+                 {modalHeaderText} 
+                 </Modal.Title>
               </Modal.Header>
-              <Modal.Body>
+              <Modal.Body
+              size="lg">
                 <form>{modalForm}</form>
               </Modal.Body>
             </Modal>
+            </div>
             {/* modal end */}
           </div>
         </section>
 
-        <Video videos={videos} />
+        <Video videos={videos} />            
       </div>
     );
   }
