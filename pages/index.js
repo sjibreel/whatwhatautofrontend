@@ -1097,7 +1097,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="number"
                 id="makeInput"
                 name="year"
@@ -1112,7 +1112,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="text"
                 id="makeInput"
                 name="make"
@@ -1127,7 +1127,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="text"
                 id="modelInput"
                 name="model"
@@ -1142,7 +1142,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="number"
                 id="exteriorColorInput"
                 name="miles"
@@ -1157,7 +1157,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="file"
                 id="exteriorColorInput"
                 name="image"
@@ -1174,7 +1174,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <textarea
-                className="form-check-input"
+                className=""
                 type="text"
                 id="options"
                 name="options"
@@ -1184,13 +1184,13 @@ class App extends React.Component {
               />
             </div>
           </div>
-          <div className="form-group row mt-3">
+          <div className="form-group row">
             <label for="name" className="col-sm-2 col-form-label">
               Name
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="text"
                 id="nameInput"
                 name="name"
@@ -1205,7 +1205,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="number"
                 id="contactNumberInput"
                 name="contactNumber"
@@ -1220,7 +1220,7 @@ class App extends React.Component {
             </label>
             <div className="col-sm-10">
               <input
-                className="form-check-input"
+                className=""
                 type="email"
                 id="emailInput"
                 name="email"
