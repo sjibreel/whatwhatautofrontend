@@ -163,27 +163,12 @@ class App extends React.Component {
            
             <div className="form-group row">
             
-              {/* <div className="col-sm-12">
-               <p className="first-btn-para">Editable content box:<br/>
-               Not sure what you want ? That's ok! We'll go <br/>
-               Our all the options so you can choose the<br/> right car that fits your needs.
+              {<div className="col-sm-12">
+               <p className="first-btn-para">
+               Not sure what you want ? That's ok! We'll go over all the options so you can choose the right car that fits your needs.
                <br/>We do 1 of 1</p>
-            </div> */}
+            </div> }
 
-              <label for="name" className="col-sm-2 control-label">
-                Enter something
-              </label>
-              <div className="col-sm-10">
-                <textarea
-                  className=""
-                  type="text"
-                  id="options"
-                  name="options"
-                  value={this.state.options}
-                  onChange={this.handleInput}
-                />{' '}
-                <br />
-              </div>
               <br />
               <br />
               <br />
@@ -509,9 +494,8 @@ class App extends React.Component {
             usedCarFields = (
               <React.Fragment>
                 <div className="form-group row">
-                  {/* <div className="col-sm-12">
+                  { <div className="col-sm-12">
                 <p className="first-btn-para">
-                Editable Content:<br/>
                 A professional mechanik will go out and inspect<br/> the vehicle with you or on your behalf.<br/>
                 -Computer hock up (making sure the systems ready and nothing has been reset
                 -Test drive<br/>
@@ -520,22 +504,7 @@ class App extends React.Component {
                 -History report INCLUDD
                 
                   </p>
-                  </div> */}
-
-                  <label for="name" className="col-sm-2 col-form-label">
-                    Enter something
-                  </label>
-                  <div className="col-sm-10">
-                    <textarea
-                      className=""
-                      type="text"
-                      id="options"
-                      name="options"
-                      value={this.state.options}
-                      onChange={this.handleInput}
-                    />{' '}
-                    <br />
-                  </div>
+                  </div>}
                   <br />
                   <br />
                   <br />
@@ -716,9 +685,8 @@ class App extends React.Component {
             usedCarFields = (
               <React.Fragment>
                 <div className="form-group row">
-                  {/* <div className="col-sm-12">
+                  { <div className="col-sm-12">
                 <p className="first-btn-para">
-                Editable Content:<br/>
                 Why waste time and money hunting for the car? Let us do it for<br/>
                 you. Let us know what you are looking for and we'll go out<br/>
                 Brakes,suspension,transmission,engine,(all fluids) <br/>
@@ -728,22 +696,7 @@ class App extends React.Component {
                 
                   </p>
                   <span> Year </span> <br/> 
-                  </div> */}
-
-                  <label for="name" className="col-sm-2 col-form-label">
-                    Enter something
-                  </label>
-                  <div className="col-sm-10">
-                    <textarea
-                      className=""
-                      type="text"
-                      id="options"
-                      name="options"
-                      value={this.state.options}
-                      onChange={this.handleInput}
-                    />{' '}
-                    <br />
-                  </div>
+                  </div> }
                   <br />
 
                   <br />
