@@ -1092,6 +1092,21 @@ class App extends React.Component {
         <React.Fragment>
           {error}
           <div className="form-group row">
+          <label for="name" className="col-sm-2 col-form-label">
+              Add vin here
+            </label>
+            <div className="col-sm-10">
+              <input
+                className=""
+                type="number"
+                id="makeInput"
+                name="year"
+                value={this.state.year}
+                onChange={this.handleInput}
+              />
+            </div>
+            </div>
+            <div className="form-group row">
             <label for="name" className="col-sm-2 col-form-label">
               Year
             </label>
