@@ -1047,7 +1047,7 @@ class App extends React.Component {
                   </p>
                   </div> }
           <label for="name" className="col-sm-2 col-form-label">
-              VIN
+              VIN 
             </label>
             <div className="col-sm-10">
               <input
