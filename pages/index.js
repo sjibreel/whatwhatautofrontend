@@ -510,7 +510,7 @@ class App extends React.Component {
                   <br />
 
                   <label for="name" className="col-sm-2 col-form-label">
-                    Add vin here
+                    VIN
                   </label>
                   <div className="col-sm-10">
                     <input
@@ -695,7 +695,6 @@ class App extends React.Component {
                 your car privately).Ask you will recieve!
                 
                   </p>
-                  <span> Year </span> <br/> 
                   </div> }
                   <br />
 
@@ -900,6 +899,7 @@ class App extends React.Component {
             );
           }
 
+          
           purchaseTypeFields = (
             <React.Fragment>
               <br />
@@ -1046,7 +1046,7 @@ class App extends React.Component {
           {error}
           <div className="form-group row">
           <label for="name" className="col-sm-2 col-form-label">
-              Add vin here
+              VIN
             </label>
             <div className="col-sm-10">
               <input
