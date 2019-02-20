@@ -266,20 +266,14 @@ class App extends React.Component {
             carFields = (
               <React.Fragment>
                 <div className="form-group row">
-                  <label for="name" className="col-sm-2 control-label">
-                    Enter something
-                  </label>
-                  <div className="col-sm-10">
-                    <textarea
-                      className=""
-                      type="text"
-                      id="options"
-                      name="options"
-                      value={this.state.options}
-                      onChange={this.handleInput}
-                    />{' '}
-                    <br />
-                  </div>
+                {<div className="col-sm-12">
+               <p className="first-btn-para">
+               You should work with us because we take all the hastle out of getting<br/>
+               into a new car.  You won't have to deal with sales people, drive to who<br/>
+               knows how many dealerships, haggle over price, fees, warrantees, etc.  <br/>
+               We make it simple so you don't have to waste time and money
+               <br/></p>
+            </div> }
                   <br />
                   <br />
                   <br />
@@ -510,7 +504,7 @@ class App extends React.Component {
                   <br />
 
                   <label for="name" className="col-sm-2 col-form-label">
-                    VIN
+                    Year
                   </label>
                   <div className="col-sm-10">
                     <input
@@ -899,7 +893,7 @@ class App extends React.Component {
             );
           }
 
-          
+
           purchaseTypeFields = (
             <React.Fragment>
               <br />
@@ -1045,6 +1039,13 @@ class App extends React.Component {
         <React.Fragment>
           {error}
           <div className="form-group row">
+          { <div className="col-sm-12">
+                <p className="first-btn-para">
+                Don't trade in your car!  We'll buy it from you.<br/>
+                We'll pick it up free of charge (running or not)!
+                
+                  </p>
+                  </div> }
           <label for="name" className="col-sm-2 col-form-label">
               VIN
             </label>
